@@ -1,19 +1,29 @@
-const school = {
-    schoolName1: "Middle Tennessee State University",
-    schoolName2: "Lipscomb University",
-    schoolName3: "CodeX Academy"
+document.getElementById("education").style.color = "blue";
+
+let m = document.getElementById("mtsu");
+
+m.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("mtsu").innerHTML = "Middle Tennessee State University, B.S. Liberal Studies, 2003<br>Studied Anthropology and Psychology with a minor in Religious Studies";
 }
 
-const degree = {
-    degree1: "Liberal Studies, B.S.",
-    degree2: "Christian Studies, M.A.",
-    degree3: "Full-Stack Developer"
+document.getElementById("education").style.color = "blue";
+
+let l = document.getElementById("lipscomb");
+
+l.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("lipscomb").innerHTML = "Lipscomb University, M.A. Christian Studies, 2007<br>Graduated with a 3.5 GPA";
 }
 
-const year = {
-    year1: "2003",
-    year2: "2007",
-    year3: "2023"
-}
+document.getElementById("education").style.color = "blue";
 
-console.log("schoolName1" + "<br>" + "degree1" + "<br>" + "year1" + "<br>")
+let c = document.getElementById("codex");
+
+c.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("codex").innerHTML = "CodeX Academy, Full-Stack Developer, 2023<br>Learned HTML, CSS, JavaScript, GitHub, Heroku, and more.";
+}
